@@ -37,6 +37,7 @@
 3. Make sure that Python3 is set and activate GPU
 
    Edit > Notebook Settings > Runtime type: Python 3
+   
    Edit > Notebook Settings > Hardware Accelerator: GPU
 
-4. Run each cell sequentially 1 by 1 OR Run them all [Runtime > Run all] 
+4. Run each cell sequentially 1by1 OR Run them all [Runtime > Run all] 
