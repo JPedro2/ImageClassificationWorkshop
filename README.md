@@ -42,4 +42,8 @@
    docker run -it --rm -p 6006:6006 -v $(log directory on host):/tf/notebooks/logs create_workshop tensorboard --logdir=/tf/notebooks/logs
 ```
    **visit:** http://localhost:6006
-  
+
+<div align="centre">
+   
+   [Start](./model_1.ipynb)
+</div>
