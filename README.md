@@ -43,7 +43,7 @@
 ```
    **visit:** http://localhost:6006
 
-<div align="centre">
+<div align="center">
    
    [Start](./model_1.ipynb)
 </div>
