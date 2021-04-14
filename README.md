@@ -29,34 +29,33 @@
 ### Instructions to deploy in your local machine (requires [docker](https://docs.docker.com/get-docker/) installed):
 
 1. Build Docker Image
-``` shell
-   docker build -t create_workshop .
-```
+   ``` shell
+      docker build -t create_workshop .
+   ```
 
 2. Run Jupyter Notebook
-``` shell
+   ``` shell
    docker run -it --rm -p 8888:8888 -v $(log directory on host):/tf/notebooks/logs create_workshop
-```
-Grab the `notebook URL` from the output:
-``` shell
-[I 19:22:44.981 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
-jupyter_http_over_ws extension initialized. Listening on /http_over_websocket
-[I 19:22:45.196 NotebookApp] Serving notebooks from local directory: /tf
-[I 19:22:45.196 NotebookApp] The Jupyter Notebook is running at:
-[I 19:22:45.196 NotebookApp] http://dd379526f0b8:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
-[I 19:22:45.196 NotebookApp]  or http://127.0.0.1:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
-[I 19:22:45.196 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 19:22:45.201 NotebookApp] 
-    
-    To access the notebook, open this file in a browser:
-        file:///root/.local/share/jupyter/runtime/nbserver-1-open.html
-    Or copy and paste one of these URLs:
-        http://dd379526f0b8:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
-     or http://127.0.0.1:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
-```
-
-   **Open the `127.0.0.1` URL to get started:** http://127.0.0.1:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
+   ```
+   Grab the `notebook URL` from the output:
+   ``` shell
+   [I 19:22:44.981 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+   jupyter_http_over_ws extension initialized. Listening on /http_over_websocket
+   [I 19:22:45.196 NotebookApp] Serving notebooks from local directory: /tf
+   [I 19:22:45.196 NotebookApp] The Jupyter Notebook is running at:
+   [I 19:22:45.196 NotebookApp] http://dd379526f0b8:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
+   [I 19:22:45.196 NotebookApp]  or http://127.0.0.1:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
+   [I 19:22:45.196 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+   [C 19:22:45.201 NotebookApp] 
+      
+      To access the notebook, open this file in a browser:
+         file:///root/.local/share/jupyter/runtime/nbserver-1-open.html
+      Or copy and paste one of these URLs:
+         http://dd379526f0b8:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
+      or http://127.0.0.1:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
+   ```
+3. **Open the `127.0.0.1` URL with the token to get started**
    
-3. Click `notebooks` and start with `model_1.ipynb` and work your way through to `model_4.ipynb`
+4. Click `notebooks` and start with `model_1.ipynb` and work your way through to `model_4.ipynb`
    
-4. Run each cell `sequentially` 1-by-1 **OR** Run them all at once: *Cell > Run all* 
+5. Run each cell `sequentially` 1-by-1 **OR** Run them all at once: *Cell > Run all* 
