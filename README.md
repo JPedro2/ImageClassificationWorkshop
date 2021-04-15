@@ -28,12 +28,18 @@
 
 ### Instructions to deploy in your local machine (requires [docker](https://docs.docker.com/get-docker/) installed):
 
-1. Build Docker Image
+1. Clone the repo and go to the `ImageClassificationWorkshop` directory
    ``` shell
-      docker build -t create_workshop .
+   git clone https://github.com/JPedro2/ImageClassificationWorkshop.git
+   cd ImageClassificationWorkshop/
    ```
 
-2. Run Jupyter Notebook
+2. Build Docker Image
+   ``` shell
+   docker build -t create_workshop .
+   ```
+
+3. Run Jupyter Notebook
    ``` shell
    docker run -it --rm -p 8888:8888 -v $(log directory on host):/tf/notebooks/logs create_workshop
    ```
@@ -54,8 +60,8 @@
          http://dd379526f0b8:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
       or http://127.0.0.1:8888/?token=b38128d704f1958b585252a9132feeea81c7a95dcc48cb34
    ```
-3. **Open the `127.0.0.1` URL with the token to get started**
+4. **Open the `127.0.0.1` URL with the token to get started**
    
-4. Click `notebooks` and start with `model_1.ipynb` and work your way through to `model_4.ipynb`
+5. Click `notebooks` and start with `model_1.ipynb` and work your way through to `model_4.ipynb`
    
-5. Run each cell `sequentially` 1-by-1 **OR** Run them all at once: *Cell > Run all* 
+6. Run each cell `sequentially` 1-by-1 **OR** Run them all at once: *Cell > Run all* 
